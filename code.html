@@ -1,0 +1,605 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style="width: 1280px; height: 4834px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Major Engineering Construction (MEC) | Engineering Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "background": "#f9f9ff",
+                        "on-surface": "#111c2c",
+                        "inverse-on-surface": "#ebf1ff",
+                        "primary-fixed": "#d9e2ff",
+                        "outline-variant": "#c5c6cf",
+                        "tertiary-fixed": "#e1e3e4",
+                        "inverse-primary": "#b4c6f4",
+                        "surface-container-highest": "#d8e3fa",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#34466d",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#b4c6f4",
+                        "surface-tint": "#4c5e86",
+                        "secondary-fixed": "#ffdfa0",
+                        "tertiary-container": "#1e2122",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "surface-dim": "#cfdaf1",
+                        "surface-container": "#e7eeff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#d8e3fa",
+                        "surface-container-high": "#dee8ff",
+                        "on-secondary-fixed": "#261a00",
+                        "on-background": "#111c2c",
+                        "primary-container": "#0a1f44",
+                        "outline": "#75777f",
+                        "tertiary": "#070a0a",
+                        "on-tertiary-fixed": "#191c1d",
+                        "on-primary-container": "#7687b2",
+                        "surface-bright": "#f9f9ff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#041a3f",
+                        "secondary-fixed-dim": "#f6be39",
+                        "secondary-container": "#ffc641",
+                        "inverse-surface": "#263142",
+                        "primary": "#00081e",
+                        "secondary": "#795900",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f0f3ff",
+                        "on-tertiary-container": "#868889",
+                        "on-secondary-container": "#715300",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "surface": "#f9f9ff",
+                        "on-surface-variant": "#44464e",
+                        "error": "#ba1a1a",
+                        "brand-gold": "#D4A017"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "label-md": ["Work Sans"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Vertical Scroll Animation */
+        @keyframes scroll-up {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+        .animate-scroll-up {
+            animation: scroll-up 25s linear infinite;
+        }
+        .animate-scroll-up:hover {
+            animation-play-state: paused;
+        }
+
+        /* Blueprint Pattern */
+        .blueprint-pattern {
+            background-color: #0A1F44;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+            background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-300 py-4" id="navbar">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-16">
+<!-- Brand Logo -->
+<div class="flex items-center gap-3">
+<img alt="MEC Logo" class="h-12 w-auto object-contain bg-white rounded p-1 shadow-sm transition-transform hover:scale-105 duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx44uSnnFbwrt2yOJNPb75RZ9JYbfgLIJggt77aAkzYvLc3emGxF2_SqFbc8Jbr_SQCx26QI7hEnlhp7CAQagXPTB691LphRs1HaFrmVMx9HSAVbiib_JnJnl8uInkvNoEAUId_e4dPd4bqgQmPTHYVgpUqXaB1L60uijGCZJw5g4Lq8kSuEGJRju2SmVxLkcipxvA127fl0_DMV1HlRuWuLeKVjW-N_58OoUReaEe07bTJwFkVZX0RjqUVrjOVZdtTnpAq8r5mvzbqqw">
+<span class="font-headline-lg font-bold text-white tracking-tight drop-shadow-md transition-colors duration-300 hidden sm:block" id="nav-brand-text"><p class="text-4xl" data-pm-slice="1 1 []">MEC&nbsp;</p></span>
+</div>
+<!-- Navigation Links (Hidden on mobile, slides in on scroll on desktop) -->
+<div class="hidden md:flex gap-8 opacity-0 translate-x-4 transition-all duration-500 items-center" id="nav-links-container">
+<a class="font-label-md text-label-md text-on-surface hover:text-brand-gold transition-colors" href="#about">About</a>
+<a class="font-label-md text-label-md text-on-surface hover:text-brand-gold transition-colors" href="#services">Services</a>
+<a class="font-label-md text-label-md text-on-surface hover:text-brand-gold transition-colors" href="#gallery">Gallery</a>
+<a class="font-label-md text-label-md text-on-surface hover:text-brand-gold transition-colors" href="#contact">Contact</a>
+</div>
+<!-- CTA Button -->
+<a class="bg-brand-gold hover:bg-yellow-500 text-on-secondary-fixed font-label-md text-label-md px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform scale-95 hover:scale-100 flex items-center gap-2" href="#contact">
+                Connect Us
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</nav>
+<!-- 1. Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 pb-16">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="MEC Construction Site" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1FFZNEOJNop9Fu57iNndtE2Wwgj_l-RHZmgqU-A4hwh_GzW0uEApKtEq6gSCgw8e_15t-fAs0XmdNwEsKzpiuOtg1IWq_QeIz1BLopI_ukoLWPi84hJR9eYF7ijN1XYSwKELYvYca1Y96jjdZcjmzAkcxLP5TMfz3ZGTSl2-2qv3NFxSmxQ0TE1NjR4j1XgszqWF3FGxeQ6FbBJl3qfUclaYJ_P9I0VBZ55YAqKg_VKrSVjASNk0pxe2PrDCSl7E9syldd5MS6yjW">
+<div class="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div> <!-- Dark overlay for text readability -->
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h1 class="font-display-lg text-display-lg text-white mb-6 drop-shadow-lg leading-tight md:text-[67px] tracking-widest">MAJOR ENGINEERING<br><span class="text-brand-gold">CONSTRUCTION</span></h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface max-w-2xl mx-auto mb-8 drop-shadow-md">
+                Building Structures. Building Trust. Premier providers of structural &amp; mechanical erection services for large-scale infrastructure projects.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-brand-gold text-on-secondary-fixed font-label-md px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center gap-2" href="#services">
+                    Explore Services
+                    <span class="material-symbols-outlined">construction</span>
+</a>
+<a class="bg-surface/10 backdrop-blur-sm border-2 border-white text-white font-label-md px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition-all duration-300 inline-flex items-center justify-center" href="#about">
+                    Discover Our Legacy
+                </a>
+</div>
+</div>
+</section>
+<!-- 3. About Us -->
+<section class="py-24 bg-surface relative z-10" id="about">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Text Content -->
+<div class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">About MEC</h2>
+<div class="w-16 h-1 bg-brand-gold mb-6"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            Founded in 2015, Major Engineering Construction (MEC) has rapidly emerged as a trusted leader in the heavy construction and erection industry. We specialize in delivering robust structural and mechanical solutions that form the backbone of monumental infrastructure projects.
+                        </p>
+</div>
+<!-- Icon List -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-surface-container rounded-lg text-brand-gold">
+<span class="material-symbols-outlined fill text-[32px]">foundation</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary">Established 2015</h4>
+<p class="text-sm text-on-surface-variant">A decade of unwavering structural integrity.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-3 bg-surface-container rounded-lg text-brand-gold">
+<span class="material-symbols-outlined text-[32px]">engineering</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary">Core Expertise</h4>
+<p class="text-sm text-on-surface-variant">Heavy structural &amp; mechanical erection.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-3 bg-surface-container rounded-lg text-brand-gold">
+<span class="material-symbols-outlined text-[32px]">domain</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary">Industries Served</h4>
+<p class="text-sm text-on-surface-variant">Infrastructure, industrial, and commercial sectors.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-3 bg-surface-container rounded-lg text-brand-gold">
+<span class="material-symbols-outlined text-[32px]">shield_lock</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[18px] text-primary">Our Strength</h4>
+<p class="text-sm text-on-surface-variant">Precision engineering and unwavering safety standards.</p>
+</div>
+</div>
+</div>
+<!-- Badges -->
+<div class="flex flex-wrap gap-3 pt-4">
+<span class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary/5 text-primary rounded-full font-label-md text-xs border border-primary/10">
+<span class="material-symbols-outlined text-[16px] text-brand-gold">verified</span>
+                            Engineered for Excellence
+                        </span>
+<span class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary/5 text-primary rounded-full font-label-md text-xs border border-primary/10">
+<span class="material-symbols-outlined text-[16px] text-brand-gold">architecture</span>
+                            Built for Durability
+                        </span>
+<span class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary/5 text-primary rounded-full font-label-md text-xs border border-primary/10">
+<span class="material-symbols-outlined text-[16px] text-brand-gold">handshake</span>
+                            Committed to Delivery
+                        </span>
+</div>
+</div>
+<!-- Image Area -->
+<div class="relative h-[500px] w-full flex items-center justify-center">
+<!-- Card 1 (Bottom) -->
+<div class="absolute w-full h-full bg-white rounded-xl shadow-lg border border-surface-container-high transform -rotate-2 translate-x-[-12px] translate-y-[12px] overflow-hidden">
+<img alt="Construction Site Detail" class="w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgQqTCLnQJfq8Me9v6dCpWNvDu97YKfYBc0G5RJKTLssiqyLwP1froSutI-beYPGDKoFjJVYevVvq76LPhVwX8eYnfS8uIRN89OdACKlj1vFnBtflWDTC3CM1U3_CUVyDu9DblQyoLg1I1EBksq4RSfmXhP9wlDA18Wwc1mtzQ1QM43UOnfcdlxYnRWeG47KcH7lantntfCko0FxnzBNKVVoUvqiusuyrUTRAqZcSnE6h75oYcDurKkPuBLd9-eAWFaJa8kF0ucCyl">
+</div>
+<!-- Card 2 (Middle) -->
+<div class="absolute w-full h-full bg-white rounded-xl shadow-xl border border-surface-container-high transform rotate-2 translate-x-[8px] translate-y-[-8px] overflow-hidden">
+<img alt="Construction Site Detail" class="w-full h-full object-cover opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgQqTCLnQJfq8Me9v6dCpWNvDu97YKfYBc0G5RJKTLssiqyLwP1froSutI-beYPGDKoFjJVYevVvq76LPhVwX8eYnfS8uIRN89OdACKlj1vFnBtflWDTC3CM1U3_CUVyDu9DblQyoLg1I1EBksq4RSfmXhP9wlDA18Wwc1mtzQ1QM43UOnfcdlxYnRWeG47KcH7lantntfCko0FxnzBNKVVoUvqiusuyrUTRAqZcSnE6h75oYcDurKkPuBLd9-eAWFaJa8kF0ucCyl">
+</div>
+<!-- Card 3 (Top) -->
+<div class="relative w-full h-full bg-white rounded-xl shadow-2xl border border-surface-container-high overflow-hidden z-10">
+<img alt="MEC Project Site showing heavy cranes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgQqTCLnQJfq8Me9v6dCpWNvDu97YKfYBc0G5RJKTLssiqyLwP1froSutI-beYPGDKoFjJVYevVvq76LPhVwX8eYnfS8uIRN89OdACKlj1vFnBtflWDTC3CM1U3_CUVyDu9DblQyoLg1I1EBksq4RSfmXhP9wlDA18Wwc1mtzQ1QM43UOnfcdlxYnRWeG47KcH7lantntfCko0FxnzBNKVVoUvqiusuyrUTRAqZcSnE6h75oYcDurKkPuBLd9-eAWFaJa8kF0ucCyl">
+<!-- Floating Stat Card (Repositioned on Top Card) -->
+<div class="absolute bottom-6 left-6 z-20 bg-white p-6 rounded-lg shadow-xl border border-surface-container flex items-center gap-4 hover:-translate-y-1 transition-transform">
+<div class="bg-primary p-3 rounded-md text-brand-gold">
+<span class="material-symbols-outlined text-[32px]">workspace_premium</span>
+</div>
+<div>
+<p class="font-display-lg text-[32px] text-primary">10+</p>
+<p class="font-label-md text-on-surface-variant text-sm uppercase tracking-wider">Years of Trust</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Services -->
+<section class="py-24 bg-primary-container text-white relative z-10" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Our <span class="text-brand-gold">Services</span></h2>
+<div class="w-16 h-1 bg-brand-gold mx-auto mb-6"></div>
+<p class="font-body-lg text-on-primary-container max-w-2xl mx-auto">Specialized mechanical and structural erection solutions executed with mathematical precision.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+<!-- Service Card 1 -->
+<div class="group bg-surface/5 backdrop-blur-sm border border-surface/10 p-8 rounded-lg shadow-lg hover:border-brand-gold hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="w-14 h-14 bg-surface/10 rounded-lg flex items-center justify-center mb-6 text-brand-gold group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">cake</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3 text-white">Girder Launching</h3>
+<p class="font-body-md text-on-primary-container text-sm">
+                        Precision placement and secure launching of massive bridge girders, ensuring structural integrity across vast spans.
+                    </p>
+</div>
+<!-- Service Card 2 -->
+<div class="group bg-surface/5 backdrop-blur-sm border border-surface/10 p-8 rounded-lg shadow-lg hover:border-brand-gold hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="w-14 h-14 bg-surface/10 rounded-lg flex items-center justify-center mb-6 text-brand-gold group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">factory</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3 text-white">Pre-Engineered Building (PEB)</h3>
+<p class="font-body-md text-on-primary-container text-sm">
+                        Rapid, reliable erection of PEB structures for industrial facilities, optimizing time without compromising strength.
+                    </p>
+</div>
+<!-- Service Card 3 -->
+<div class="group bg-surface/5 backdrop-blur-sm border border-surface/10 p-8 rounded-lg shadow-lg hover:border-brand-gold hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="w-14 h-14 bg-surface/10 rounded-lg flex items-center justify-center mb-6 text-brand-gold group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">plumbing</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3 text-white">Pipeline Fabrication &amp; Erection</h3>
+<p class="font-body-md text-on-primary-container text-sm">
+                        Expert welding, fabrication, and installation of complex heavy-duty pipeline networks for industrial applications.
+                    </p>
+</div>
+<!-- Service Card 4 -->
+<div class="group bg-surface/5 backdrop-blur-sm border border-surface/10 p-8 rounded-lg shadow-lg hover:border-brand-gold hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+<div class="w-14 h-14 bg-surface/10 rounded-lg flex items-center justify-center mb-6 text-brand-gold group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px]">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-3 text-white">Machinery Shifting</h3>
+<p class="font-body-md text-on-primary-container text-sm">
+                        Safe, calculated relocation and positioning of heavy industrial machinery within complex operational environments.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Brochure CTA -->
+<section class="bg-gradient-to-b from-primary to-primary-container border-y border-brand-gold/20 relative z-10 overflow-hidden py-4"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-2"><!-- Left Side: Image Stack (Moved to Left) -->
+<div class="relative h-[230px] w-full flex items-center justify-center order-1 scale-95">
+    <!-- Card 1 (Bottom) -->
+    <div class="absolute w-[192px] h-full bg-white rounded-xl shadow-lg border border-white/10 transform -rotate-6 translate-x-[-16px] translate-y-[16px] overflow-hidden">
+        <img alt="Brochure Preview 1" class="w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAkFCgly6dji6Bh418vLbxe9tyoDDB2hoUeO0K1HL14-NkvQZPz9tLF2CFycJ48W0DKekQbrApIWzqVFXlmy4qB1G-Dvsn37axrHHEfgevWRFfvPRnKN4DsSvBCYxQUp6wRwFi5f2fadPBIQZ6dkLBWnzveOa5sBiAmXC-NxO9z7KUyr8m9tWTkxfIRZdwtn40W3A3aSEcOoc_g2JTc-Ye61gkRAgYmDzO7bhdioZrhLQRrFX2iD4EfNKhpnZkG8VnNffCNpX9FYGE">
+    </div>
+    <!-- Card 2 (Middle) -->
+    <div class="absolute w-[192px] h-full bg-white rounded-xl shadow-xl border border-white/10 transform rotate-3 translate-x-[8px] translate-y-[-8px] overflow-hidden">
+        <img alt="Brochure Preview 2" class="w-full h-full object-cover opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAkFCgly6dji6Bh418vLbxe9tyoDDB2hoUeO0K1HL14-NkvQZPz9tLF2CFycJ48W0DKekQbrApIWzqVFXlmy4qB1G-Dvsn37axrHHEfgevWRFfvPRnKN4DsSvBCYxQUp6wRwFi5f2fadPBIQZ6dkLBWnzveOa5sBiAmXC-NxO9z7KUyr8m9tWTkxfIRZdwtn40W3A3aSEcOoc_g2JTc-Ye61gkRAgYmDzO7bhdioZrhLQRrFX2iD4EfNKhpnZkG8VnNffCNpX9FYGE">
+    </div>
+    <!-- Card 3 (Top) -->
+    <div class="relative w-[192px] h-full bg-white rounded-xl shadow-2xl border border-white/20 overflow-hidden z-10">
+        <img alt="MEC Brochure Cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAkFCgly6dji6Bh418vLbxe9tyoDDB2hoUeO0K1HL14-NkvQZPz9tLF2CFycJ48W0DKekQbrApIWzqVFXlmy4qB1G-Dvsn37axrHHEfgevWRFfvPRnKN4DsSvBCYxQUp6wRwFi5f2fadPBIQZ6dkLBWnzveOa5sBiAmXC-NxO9z7KUyr8m9tWTkxfIRZdwtn40W3A3aSEcOoc_g2JTc-Ye61gkRAgYmDzO7bhdioZrhLQRrFX2iD4EfNKhpnZkG8VnNffCNpX9FYGE">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+        <div class="absolute bottom-4 left-4">
+            <span class="bg-brand-gold text-primary font-label-md text-[10px] px-2 py-0.5 rounded uppercase tracking-widest">Company Profile</span>
+        </div>
+    </div>
+</div>
+<!-- Right Side: Text & Actions (Moved to Right) -->
+<div class="space-y-6 order-2 max-w-full max-w-md">
+    <div>
+        <h3 class="font-display-lg text-[24px] md:text-[36px] text-white mb-3 tracking-tight">Want to Learn More About Us?</h3>
+        <div class="w-12 h-1 bg-brand-gold mb-4"></div>
+        <p class="font-body-md text-[13px] text-inverse-on-surface/80 leading-loose">
+            Download our comprehensive company brochure for an in-depth look at our technical capabilities, project portfolio, and safety specifications.
+        </p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3 scale-95">
+        <a class="bg-brand-gold text-primary font-label-md text-xs px-6 py-3 rounded-lg shadow-xl hover:shadow-2xl hover:bg-white hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group uppercase tracking-widest" href="#">
+            <span class="">Download Brochure</span>
+            <span class="material-symbols-outlined text-[18px] group-hover:translate-y-1 transition-transform">file_download</span>
+        </a>
+        <a class="bg-surface/10 backdrop-blur-sm border-2 border-white/20 text-white font-label-md text-xs px-6 py-3 rounded-lg hover:bg-white hover:text-primary transition-all duration-300 flex items-center justify-center gap-2 group uppercase tracking-widest" href="#">
+            <span class="">View Brochure</span>
+            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">visibility</span>
+        </a>
+    </div>
+</div></div>
+</div></section>
+<!-- 6. Gallery -->
+<section class="py-24 bg-surface relative z-10" id="gallery">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Gallery</h2>
+<div class="w-16 h-1 bg-brand-gold mb-6"></div>
+</div>
+<!-- Media Box -->
+<div class="max-w-5xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="h-[600px] rounded-xl shadow-lg bg-white relative overflow-hidden">
+<!-- Fade overlays for top/bottom -->
+<div class="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none"></div>
+<!-- Scrolling content -->
+<div class="animate-scroll-up p-4"><div class="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+<!-- Batch 1: Mixed Aspect Ratios -->
+<div class="relative break-inside-avoid group overflow-hidden rounded-lg shadow-md">
+<img alt="Vertical Construction Site" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1FFZNEOJNop9Fu57iNndtE2Wwgj_l-RHZmgqU-A4hwh_GzW0uEApKtEq6gSCgw8e_15t-fAs0XmdNwEsKzpiuOtg1IWq_QeIz1BLopI_ukoLWPi84hJR9eYF7ijN1XYSwKELYvYca1Y96jjdZcjmzAkcxLP5TMfz3ZGTSl2-2qv3NFxSmxQ0TE1NjR4j1XgszqWF3FGxeQ6FbBJl3qfUclaYJ_P9I0VBZ55YAqKg_VKrSVjASNk0pxe2PrDCSl7E9syldd5MS6yjW">
+</div>
+<div class="relative break-inside-avoid group overflow-hidden rounded-lg shadow-md">
+<img alt="Horizontal Machinery Video" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtS22wmzPJbmtz3P61jCRPgML8DtQ1edBCiC3ZeIHxhkAGT3xfxmQiZ3NXSnDmN8af_DhMR_p29hqdN1cU3eAKR3a-iI3kdT6rVItk0O4mWPw9x6j5qm8fHNu4BObTN-zBLIPRFevG5t0HRpGIW--iR580bfqde2e2FB02Nba9r7bWaQtAZdi4I1qE1QQC1bGzHpz6mXHesGzdmico4iReWf485IZl9r7DlOwqZjEXF08J8Y0yzde-t3QxFgG485UIeyta4B22ouEI">
+<div class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-100 group-hover:bg-black/10 transition-all">
+<span class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
+</div>
+</div>
+<div class="relative break-inside-avoid group overflow-hidden rounded-lg shadow-md">
+<img alt="Vertical Steel Framework" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1NxzhsuEVNWGF3nuwcI0GCIobkynIi8wd13ZISVodTi61tKNrPv9faJSw9rVtgO7bsCEqepiWkO2Aresig9dCHfkQDhqO6DNDChKs5lz5EOnmXoBQSUNb-aIAYyw9weJonWrBhsL9tyY8TGZN_KVMOkvLC0lo_4md0x8ZT1sUaJd6J8VPUXhWQzPU_0kaFqF3DGoXT5T9C2EXENgssaCCVzd_IioZEL29pbKcrtQlowCGt1y7YoOJHSooC6TD9-caYrEmoAtZSALO">
+</div>
+<div class="relative break-inside-avoid group overflow-hidden rounded-lg shadow-md">
+<img alt="Horizontal Engineering Team" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmO2DX_hx3LRAzi1oH2iS9Y4WuPIKFbRaH--nAyKp2Zi8fzgYZABYFj_vKAJOae8ltVI66EpmttKrnQJozNkD9HP7LEey8QmwJ1xhji63GSUHwLVrlGToWXp1sEa08LLLZcU9OkmC359peP5zRdl0Ls_1TC1oyM4aeSS_v2iEHdcYovBENR85EPIufxYdhzY4dwnvkwHccz5BkwmWSmH4RbDH8J64zesm_PcspFmhpW1ZQgiu2Maz_SzK6d-Oi8DOFBtfJoY7LjkFu">
+<div class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-100 group-hover:bg-black/10 transition-all">
+<span class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
+</div>
+</div>
+<div class="relative break-inside-avoid group overflow-hidden rounded-lg shadow-md">
+<img alt="Square Girder Detail" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC88OIy08N1vT0lCDHVULXwGcvJ2vsUsfHvMmdavOs7fY9W0WolXd69SnmAGhBFv6rMkfMypTJsQI2tMM2qel6kLMv7xS1_ln5ShgJNZws88uaXNBHq_Ml4B4jzfo7OLsJhHNqeYI5gUrMA1FbCqZAMPx_SD-PteN48jalUOBJtIBPZ8PrCW0GmjHWw_4R0oLfS4MzruTItCuHJTOtIgV0T5CY3Uljx87RVPaqgCWxfjNvFb24E_rcHLzE_MZOR8653AzT4YvCcaNkM">
+</div>
+<!-- Batch 2: Duplicate for Seamless Loop -->
+<div class="relative break-inside-avoid group overflow-hidden rounded-lg shadow-md">
+<img alt="Vertical Construction Site" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1FFZNEOJNop9Fu57iNndtE2Wwgj_l-RHZmgqU-A4hwh_GzW0uEApKtEq6gSCgw8e_15t-fAs0XmdNwEsKzpiuOtg1IWq_QeIz1BLopI_ukoLWPi84hJR9eYF7ijN1XYSwKELYvYca1Y96jjdZcjmzAkcxLP5TMfz3ZGTSl2-2qv3NFxSmxQ0TE1NjR4j1XgszqWF3FGxeQ6FbBJl3qfUclaYJ_P9I0VBZ55YAqKg_VKrSVjASNk0pxe2PrDCSl7E9syldd5MS6yjW">
+</div>
+<div class="relative break-inside-avoid group overflow-hidden rounded-lg shadow-md">
+<img alt="Horizontal Machinery Video" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtS22wmzPJbmtz3P61jCRPgML8DtQ1edBCiC3ZeIHxhkAGT3xfxmQiZ3NXSnDmN8af_DhMR_p29hqdN1cU3eAKR3a-iI3kdT6rVItk0O4mWPw9x6j5qm8fHNu4BObTN-zBLIPRFevG5t0HRpGIW--iR580bfqde2e2FB02Nba9r7bWaQtAZdi4I1qE1QQC1bGzHpz6mXHesGzdmico4iReWf485IZl9r7DlOwqZjEXF08J8Y0yzde-t3QxFgG485UIeyta4B22ouEI">
+<div class="absolute inset-0 flex items-center justify-center bg-black/30">
+<span class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</section>
+<!-- 7. Contact & Location & Footer -->
+<section class="blueprint-pattern text-white border-t border-brand-gold/20" id="contact">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24">
+<div class="bg-white rounded-lg shadow-xl border border-surface-container-high overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2"><!-- Left Column: Prominent Location Focus -->
+<div class="p-8 md:p-12 space-y-10 bg-primary/5 border-b lg:border-b-0 lg:border-r border-surface-container-high relative overflow-hidden">
+<!-- Subtle Map Background Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none blueprint-pattern"></div>
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg mb-4 text-primary">Visit <span class="text-brand-gold">Our Office</span></h2>
+<div class="w-16 h-1 bg-brand-gold mb-8"></div>
+<!-- Primary Location Block -->
+<div class="space-y-6 mb-12">
+<div class="flex flex-col items-start gap-6">
+<div class="relative w-full h-48 mb-8 rounded-xl overflow-hidden border border-brand-gold/20 shadow-inner group">
+<!-- Stylized Map Background -->
+<div class="absolute inset-0 bg-primary-container blueprint-pattern opacity-40"></div>
+<!-- Minimalist Map Elements -->
+<div class="absolute inset-0 flex items-center justify-center">
+<!-- Stylized 'Roads' -->
+<div class="absolute w-full h-0.5 bg-brand-gold/10 top-1/3 rotate-12"></div>
+<div class="absolute w-full h-0.5 bg-brand-gold/10 top-2/3 -rotate-6"></div>
+<div class="absolute h-full w-0.5 bg-brand-gold/10 left-1/4 rotate-3"></div>
+<div class="absolute h-full w-0.5 bg-brand-gold/10 left-3/4 -rotate-12"></div>
+<!-- Pulse Effect for Location -->
+<div class="absolute w-12 h-12 bg-brand-gold/20 rounded-full animate-ping"></div>
+<!-- Location Marker -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-10 h-10 bg-brand-gold text-primary rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined fill text-[24px]">location_on</span>
+</div>
+<div class="mt-2 px-3 py-1 bg-primary text-brand-gold text-[10px] font-label-md rounded uppercase tracking-widest shadow-lg border border-brand-gold/30">
+                MEC HQ
+            </div>
+</div>
+</div>
+<!-- Glassmorphism Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent pointer-events-none"></div>
+</div>
+<div>
+<h4 class="font-label-md text-brand-gold mb-2 uppercase tracking-widest text-sm">Corporate Headquarters</h4>
+<p class="font-headline-md text-[24px] leading-relaxed text-primary max-w-md">123 Engineering Way, Industrial District, Metropolis</p>
+</div>
+</div>
+</div>
+<!-- Secondary Contact Details -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-primary/10">
+<div class="space-y-1">
+<h4 class="font-label-md text-brand-gold uppercase tracking-wider text-xs">Direct Lines</h4>
+<p class="font-body-md text-on-surface">+1 (555) 123-4567</p>
+<p class="font-body-md text-on-surface">+1 (555) 987-6543</p>
+</div>
+<div class="space-y-1">
+<h4 class="font-label-md text-brand-gold uppercase tracking-wider text-xs">Email Inquiry</h4>
+<p class="font-body-md text-on-surface">projects@mec-engineering.com</p>
+</div>
+<div class="space-y-1 sm:col-span-2 flex items-center gap-3">
+<div class="w-8 h-8 bg-white rounded-full p-1 shadow-sm">
+<img alt="WhatsApp" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLvbx_5xFcwVF6P09AwykoBD5VxUVyX5I2XfPWXMarymR3d2sLNs-KG3WiPFLwvnk3CzBGrfCeI4qtWYlr79YAjQpWKVfgACFxJpSPDUkUZeauht9J8LSCGlG5pcls_2hzZl35g9ddUkB2pSR10uStfLj_aXm5v09L7o2Fln9gMxj4uZ-IO6hG82IwBJRMpoqlEl0LvZNXKYOmSgnsOmwJCsvo_W2oi3CsSljxywERXkpZbY5c1QlGcpAvqx">
+</div>
+<p class="font-label-md text-on-surface">WhatsApp Support: <span class="text-primary">+1 (555) 000-1111</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="p-8 md:p-12 bg-surface-container-lowest">
+<div class="mb-8">
+<h3 class="font-headline-md text-primary mb-2">Send a Message</h3>
+<p class="text-sm text-on-surface-variant">Discuss your next infrastructure project with our experts.</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="font-label-md text-primary uppercase tracking-wider text-xs" for="name">Name</label>
+<input class="w-full bg-white border border-outline-variant/30 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-brand-gold transition-colors" id="name" placeholder="Your Name" type="text">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="font-label-md text-primary uppercase tracking-wider text-xs" for="phone">Phone</label>
+<input class="w-full bg-white border border-outline-variant/30 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-brand-gold transition-colors" id="phone" placeholder="Your Phone" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-primary uppercase tracking-wider text-xs" for="email">Email</label>
+<input class="w-full bg-white border border-outline-variant/30 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-brand-gold transition-colors" id="email" placeholder="Your Email" type="email">
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-primary uppercase tracking-wider text-xs" for="message">Message</label>
+<textarea class="w-full bg-white border border-outline-variant/30 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-brand-gold transition-colors resize-none" id="message" placeholder="How can we help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-brand-gold hover:bg-yellow-500 text-primary font-label-md py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group" type="submit">
+            Connect Us
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div></div>
+</div>
+</div>
+<!-- Footer Bottom -->
+<div class="bg-tertiary-container py-8 border-t border-white/5">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<img alt="MEC Logo Small" class="h-8 w-auto object-contain bg-white rounded p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDek69MxjkxqXP4xiz-ig2XlUoMvfzpCI75-ob4MufZ37AMk5vlLi3MIyp4TUY5StlHFH6pCMGQoQQjg6IJEl4KhmP9tjpVlD2S740dbbQtnQ8Bq7WZviGe3t8DuUW17KSj0chPgqzMonFnJMcT4NFfjwP1RSOmge0EDvCNIS3Fo6U_85QgVEJPR94s9NKCwrLrBOaYI6xY2aCoh2fTXWPhlIR9bHhf72CfypCyJzB4spKzCuB-xFS2BPF4Sl6iinukMrR0-lmWs_xJ">
+<span class="font-label-md text-on-tertiary-container">Major Engineering Construction</span>
+</div>
+<p class="font-body-md text-sm text-on-tertiary-container">
+                    © 2024 MEC. Building Strength. Delivering Trust.
+                </p>
+<div class="flex gap-4">
+<a class="text-on-tertiary-container hover:text-brand-gold font-label-md text-sm transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-tertiary-container hover:text-brand-gold font-label-md text-sm transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Vanilla JS for Navbar Scroll Logic -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.getElementById('navbar');
+            const navLinksContainer = document.getElementById('nav-links-container');
+            const navBrandText = document.getElementById('nav-brand-text');
+            const links = navLinksContainer.querySelectorAll('a');
+
+            const handleScroll = () => {
+                if (window.scrollY > 50) {
+                    // Scrolled State
+                    navbar.classList.add('bg-white', 'shadow-md', 'py-2');
+                    navbar.classList.remove('py-4');
+                    
+                    navBrandText.classList.remove('text-white', 'drop-shadow-md');
+                    navBrandText.classList.add('text-primary');
+
+                    navLinksContainer.classList.remove('opacity-0', 'translate-x-4', 'hidden');
+                    navLinksContainer.classList.add('opacity-100', 'translate-x-0', 'flex');
+
+                } else {
+                    // Initial Transparent State
+                    navbar.classList.remove('bg-white', 'shadow-md', 'py-2');
+                    navbar.classList.add('py-4');
+
+                    navBrandText.classList.add('text-white', 'drop-shadow-md');
+                    navBrandText.classList.remove('text-primary');
+
+                    navLinksContainer.classList.add('opacity-0', 'translate-x-4');
+                    navLinksContainer.classList.remove('opacity-100', 'translate-x-0');
+                    
+                    // Delay hiding flex to allow fade out animation
+                    setTimeout(() => {
+                        if(window.scrollY <= 50) {
+                             navLinksContainer.classList.add('hidden');
+                             navLinksContainer.classList.remove('flex');
+                        }
+                    }, 500);
+                }
+            };
+
+            // Active State Logic based on section scroll
+            const sections = document.querySelectorAll('section[id]');
+            
+            const highlightNav = () => {
+                let scrollY = window.pageYOffset;
+                
+                sections.forEach(current => {
+                    const sectionHeight = current.offsetHeight;
+                    const sectionTop = current.offsetTop - 100;
+                    const sectionId = current.getAttribute('id');
+                    
+                    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                        links.forEach(link => {
+                            link.classList.remove('text-brand-gold', 'font-bold', 'border-b-2', 'border-brand-gold');
+                            if(link.getAttribute('href') === '#' + sectionId) {
+                                link.classList.add('text-brand-gold', 'font-bold', 'border-b-2', 'border-brand-gold');
+                            }
+                        });
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', () => {
+                handleScroll();
+                highlightNav();
+            });
+            
+            // Initial check
+            handleScroll();
+        });
+    </script>
+
+
+</body></html>
