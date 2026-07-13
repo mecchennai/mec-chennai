@@ -100,7 +100,7 @@ export function Contact() {
                       <a href="tel:+919496928266">+91 94969 28266</a>
                     </p>
                     <p className="font-body text-on-surface hover:text-brand-gold transition-colors">
-                      <a href="tel:+919037101261">+91 90371 01261</a>
+                      <a href="tel:+919037101261">+91 90371 01761</a>
                     </p>
                   </div>
                   <div>
