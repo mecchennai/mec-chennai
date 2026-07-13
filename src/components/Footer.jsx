@@ -39,7 +39,7 @@ export const Footer = React.memo(function Footer({ aboutContent }) {
                 <Icon className="text-[18px] mt-0.5 text-white/60">phone</Icon>
                 <div className="flex flex-col gap-1">
                   <a href="tel:+919496928266" className="font-body text-sm transition-colors hover:text-brand-gold">+91 94969 28266</a>
-                  <a href="tel:+919037101261" className="font-body text-sm transition-colors hover:text-brand-gold">+91 90371 01261</a>
+                  <a href="tel:+919037101261" className="font-body text-sm transition-colors hover:text-brand-gold">+91 90371 01761</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
